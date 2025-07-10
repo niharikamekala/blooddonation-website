@@ -1,158 +1,95 @@
-<scripthttps://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
-src=""></script> <br>
-<body background="">
-  
-<h1 id ="title" style="color:rgba(255, 0, 0, 0.863)">Blood Donation Form</h1>
-<div id="form-outer">
-  <marquee><h2 style="color:hwb(0 100% 0%)"><i>Register your Details here to Donate Blood</i></h3></marquee>
-  <p id="description">
-  Donate Blood and Save Human Life's
-  </p>
-  <form id="survey-form" method="GET">
-    <div class="rowTab">
-      <div class="labels">
-        <label id="name-label" for="name">*Name: </label>
-      </div>
-      <div class="rightTab">
-        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name here" required>
-      </div>
-    </div>
-    
-    <div class="rowTab">
-      <div class="labels">
-        <label id="number-label" for="name">* Age: </label>
-      </div>
-      <div class="rightTab">
-        <input autofocus type="number" age="age" id="age" class="input-field" placeholder="Enter your age here" " required>
-      </div>
-    </div>
-    
-    <div class="rowTab">
-      <div class="labels">
-        <label id="email-label" for="email">* Email: </label>
-      </div>
-      <div class="rightTab">
-        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
-      </div>
-    </div>
-    
-                                                                                                 <div class="rowTab">
-      <div class="labels">
-                         <label for="Gender">Gender</label>
-      </div>
-                                            
-      <div class="rightTab">
-        <ul style="list-style: none;">
-          <li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="userRatings" >Male</label></li>
-          <li class="radio"><label><input name="radio-buttons" value="2"  type="radio" class="userRatings" >Female</label></li>
-          <li class="radio"><label><input name="radio-buttons" value="3"  type="radio" class="userRatings" >Others</label></li>
-                                                                                                          </ul>
-                                                            </div>
-                                                    <div class="rowTab">
-      <div class="labels">
-                         <label for="currentPos"><B>*Blood Group:</B></label>
-      </div>
-      <div class="rightTab">
-        <select id="dropdown" name="currentPos" class="dropdown">
-      <option disabled value>Select an option</option>
-      <option  value="">O+</option>
-      <option value="blood groupr">O-</option>
-      <option value="blood group">A+</option>
-      <option  value="blood group">A-</option>
-      <option value="blood group">B+</option>
-      <option value="blood group">B-</option>
-      <option  value="blood group">A1+</option>
-      <option value="blood group">A1-</option>
-      <option value="blood group">B1+</option>
-      <option  value="blood group">B1-</option>
-      <option value="blood group">AB+</option>
-      <option value="blood group">AB-</option>
-    </select></div>
-    </div>              
-                                                                                      
-       
-     <div class="rowTab">
-      <div class="labels">
-        <label id="name-label" for="name">* Mobile Number: </label>
-      </div>
-      <div class="rightTab">
-        <input autofocus type="number" name="mobile number"class="input-field" placeholder="Enter your Mobile number" id="number" required>
-   </div>
-    </div>
-    
-    
-     <div class="rowTab">
-      <div class="labels">
-        <label id="name-label" for="name">* State: </label>
-      </div>
-      <div class="rightTab">
-        <input autofocus type="text" name="state" id="state" class="input-field" placeholder="Which state you belong to" required>
-      </div>
-    </div>
-    
-     
-      <div class="labels">
-        <label id="name-label" for="name">* District: </label>
-      </div>
-      <div class="rightTab">
-        <input autofocus type="text" name="district" id="district" class="input-field" placeholder="Which district you belong to" required>
-      </div>
-    </div>
-    
-    <div class="rowTab">
-      <div class="labels">
-        <label id="name-label" for="name">* City: </label>
-      </div>
-      <div class="rightTab">
-        <input autofocus type="text" name="city" id="city" class="input-field" placeholder="Which city you belong to" required>
-      </div>
-    </div>
-    
-        <div class="rowTab">
-      <div class="labels">
-        <label id="name-label" for="name">* Area: </label>
-      </div>
-      <div class="rightTab">
-        <input autofocus type="text" name="area" id="area" class="input-field" placeholder="Which area you belong to" required>
-      </div>
-    </div>
-    
-        <div class="rowTab">
-      <div class="labels">
-        <label id="name-label" for="name">* Pincode: </label>
-      </div>
-      <div class="rightTab">
-        <input autofocus type="number" id="number" name="pincode" id="pincode" class="input-field" placeholder="Pincode of your city/area" required>
-      </div>
-    </div><br>
-        
- <h4>There are some minor side effects that could occur. These include:<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blood Donation Form</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Donate Blood and Save Human Lives</h1>
+    <form id="donationForm">
+      <label for="name">* Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name here" required /><br />
 
-#bruising,<br>
-#continued bleeding,<br>
-#dizziness,<br> #lightheadedness,<br> #nausea,<br>
-#pain and<br>
-#physical weakness. <br>    </h4>                                                                                                               <div class="rowTab">
-      <div class="labels">
-        <label for="preferences">*Do you accept all terms and conditions? </label>
-      </div>
-      <div class="rightTab">
-        <ul id="preferences" style="list-style: none;">
-          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Yes</label></li>
-          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">No</li>
- </div>       
-                                                                                                <div class="rowTab">
-      <div class="labels">
-        <label for="problems">Do you have any Medical Problem before?</label>
-   <textarea id="problems" class="input-field"  name="comment" placeholder="Enter your Problems here..."></textarea>
+      <label for="age">* Age:</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age here" required /><br />
+
+      <label for="email">* Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required /><br />
+
+      <label for="gender">* Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">Others</option>
+      </select><br />
+
+      <label for="blood-group">* Blood Group:</label>
+      <select id="blood-group" name="blood-group" required>
+        <option value="" disabled selected>Select your blood group</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select><br />
+
+      <label for="mobile">* Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required /><br />
+
+      <label for="state">* State:</label>
+      <input type="text" id="state" name="state" placeholder="Which state you belong to" required /><br />
+
+      <label for="district">* District:</label>
+      <input type="text" id="district" name="district" placeholder="Which district you belong to" required /><br />
+
+      <label for="city">* City:</label>
+      <input type="text" id="city" name="city" placeholder="Which city you belong to" required /><br />
+
+      <label for="area">* Area:</label>
+      <input type="text" id="area" name="area" placeholder="Which area you belong to" required /><br />
+
+      <label for="pincode">* Pincode:</label>
+      <input type="text" id="pincode" name="pincode" placeholder="Pincode of your city/area" required /><br />
+
+      <p>There are some minor side effects that could occur. These include:</p>
+      <ul>
+        <li>Bruising</li>
+        <li>Continued bleeding</li>
+        <li>Dizziness</li>
+        <li>Lightheadedness</li>
+        <li>Nausea</li>
+        <li>Pain</li>
+        <li>Physical weakness</li>
+      </ul>
+
+      <label>* Do you accept all terms and conditions?</label><br />
+      <input type="radio" id="terms-yes" name="terms" value="yes" required />
+      <label for="terms-yes">Yes</label>
+      <input type="radio" id="terms-no" name="terms" value="no" />
+      <label for="terms-no">No</label><br />
+
+      <label for="medical-problem">Do you have any medical problems?</label><br />
+      <textarea id="medical-problem" name="medical-problem" placeholder="Enter your problems here..."></textarea><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Popup -->
+    <div id="thankYouPopup" class="popup">
+      <div class="popup-content">
+        <p>Thank you for registering!</p>
+        <button onclick="closePopup()">Close</button>
       </div>
     </div>
-      
- <button id="submit" type="submit">Submit</button>
-  </form>
-</div>
-    
-     <h2 style="color:white"><marquee>Donate your Blood, but Not on ROAD</marquee></h2> 
-    
-    
-    
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
